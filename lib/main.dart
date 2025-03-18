@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/first_screen.dart';
 import 'package:food_delivery/second_screen.dart';
 // import 'package:food_delivery/home.dart';
-import 'package:food_delivery/signin.dart';
+import 'package:food_delivery/signIn.dart';
 
 void main() {
   runApp(const MyApp());

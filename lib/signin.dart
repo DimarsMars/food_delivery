@@ -13,7 +13,7 @@ class SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('StatefUll Widget'),
+        title: Text('StatefUl Widget'),
         backgroundColor: Colors.blueGrey,
       ),
       body: Column(
