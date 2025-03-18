@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/first_screen.dart';
+import 'package:food_delivery/second_screen.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -32,15 +34,18 @@ class Homepage extends StatelessWidget {
             ),
           ),
           Center(
-            child: TextButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20),
-                ),
-              ),
-            ),),
+            child: ElevatedButton(
+              onPressed: () {
+                // push method
+                Navigator.pushNamed(context, FirstScreen.id);
+
+                // push replace method
+                // Navigator.pushReplacement(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => FirstScreen.id()));
+        },
+        child: Text('Go to First Screen'),
+        )
           )
         ],
       ),
